@@ -1,7 +1,7 @@
 import { FiChevronRight } from "react-icons/fi";
 import GreenBtn from "../UI/GreenBtn";
 
-const CTA = ({ setScreen }) => {
+const Cta= ({ setScreen }) => {
   return (
     <section className="px-6 md:px-12 py-20 relative z-10">
       <div className="max-w-7xl mx-auto">
@@ -22,4 +22,4 @@ const CTA = ({ setScreen }) => {
     </section>
   );
 };
-export default CTA;
+export default Cta;

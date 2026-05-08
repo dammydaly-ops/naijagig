@@ -5,7 +5,6 @@ import Hero from './Components/Home/Hero';
 import Categories from './Components/Home/Categories';
 import Testimonials from './Components/Home/Testimonials';
 import HowWorks from './Components/Home/HowItWorks';
-import CTA from "./Components/Home/CTA";
 import Footer from './Components/Home/Footer';
 import Browse from './Components/Home/Browse';
 import Auth from './Components/Auth';
@@ -16,6 +15,7 @@ import ContactModal from './Components/ContactModal';
 import GhostBtn from './Components/UI/GhostBtn';
 import { getSession, clearSession, getUsers } from "./Components/Storage";
 import { CATS, SEED_ARTISANS, TESTIMONIALS } from "./Data/Data";
+import Cta from './Components/Home/Cta';
 
 const App = () => {
   const [search, setSearch] = useState("");
@@ -109,7 +109,7 @@ const App = () => {
           />
           <Testimonials testimonials={TESTIMONIALS} />
           <HowWorks />
-          <CTA setScreen={setScreen} />
+          <Cta setScreen={setScreen} />
           <Footer />
         </div>
       )}
