@@ -5,7 +5,7 @@ import Hero from './Components/Home/Hero';
 import Categories from './Components/Home/Categories';
 import Testimonials from './Components/Home/Testimonials';
 import HowWorks from './Components/Home/HowItWorks';
-import Cta from './Components/Home/CTA';
+import CTA from "./Components/Home/CTA";
 import Footer from './Components/Home/Footer';
 import Browse from './Components/Home/Browse';
 import Auth from './Components/Auth';
