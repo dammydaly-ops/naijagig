@@ -16,7 +16,6 @@ import ContactModal from './Components/ContactModal';
 import GhostBtn from './Components/UI/GhostBtn';
 import { getSession, clearSession, getUsers } from "./Components/Storage";
 import { CATS, SEED_ARTISANS, TESTIMONIALS } from "./Data/Data";
-import CTA from './Components/Home/CTA';
 
 const App = () => {
   const [search, setSearch] = useState("");
