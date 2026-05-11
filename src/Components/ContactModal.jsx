@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiX, FiUser, FiMail, FiMessageSquare, FiCheck } from "react-icons/fi";
-import GreenBtn from "./UI/Greenbtn";
+import GreenBtn from "./UI/GreenBtn";
 import Input from "./UI/Input";
 
 
