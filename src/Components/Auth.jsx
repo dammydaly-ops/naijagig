@@ -7,7 +7,7 @@ import { getUsers, saveUsers, saveSession } from "./Storage";
 
 
 
-const Auth = ({ onLogin, onBack }) => {
+const Auth = ({ onLogin, onBack, type }) => {
   const [mode, setMode] = useState("login");
   const [utype, setUtype] = useState("customer");
   const [username, setUsername] = useState("");
@@ -52,7 +52,7 @@ const Auth = ({ onLogin, onBack }) => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-600 to-green-900 flex items-center justify-center">
               <FiTool className="text-white text-lg" />
             </div>
-            <span className="font-black text-2xl text-white" style={{ fontFamily: "'Syne',sans-serif" }}>NijaGig</span>
+            <span className="font-black text-2xl text-white" style={{ fontFamily: "'Syne',sans-serif" }}>NaijaGig</span>
           </div>
           <p className="text-gray-500 text-sm">Nigeria's #1 Talent Marketplace</p>
         </div>
@@ -83,7 +83,7 @@ const Auth = ({ onLogin, onBack }) => {
             <Input label="Username" placeholder="e.g. emeka_codes" value={username} onChange={e => setUsername(e.target.value)} />
             {mode === "register" && <Input label="Email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} type="email" />}
             {mode === "register" && utype === "artisan" && <Input label="Your Role / Job Title" placeholder="e.g. Full Stack Developer" value={role} onChange={e => setRole(e.target.value)} />}
-            <Input label="Password" placeholder="••••••••" value={pass} onChange={e => setPass(e.target.value)} type="password" />
+            <Input type={"password"} label="Password" placeholder="••••••••" value={pass} onChange={e => setPass(e.target.value)} type="password" />
             {err && (
               <div className="flex items-center gap-2 bg-red-950/50 border border-red-900/50 rounded-lg px-3 py-2">
                 <FiAlertCircle className="text-red-400 shrink-0" size={14} />

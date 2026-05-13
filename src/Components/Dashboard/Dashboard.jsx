@@ -54,7 +54,7 @@ const Dashboard = ({ session, onLogout }) => {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-600 to-green-900 flex items-center justify-center shrink-0">
             <FiTool className="text-white text-sm" />
           </div>
-          {sideOpen && <span className="font-black text-white text-base" style={{ fontFamily: "'Syne',sans-serif" }}>NijaGig</span>}
+          {sideOpen && <span className="font-black text-white text-base" style={{ fontFamily: "'Syne',sans-serif" }}>NaijaGig</span>}
         </div>
 
         {sideOpen && (

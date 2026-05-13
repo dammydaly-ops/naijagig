@@ -66,6 +66,7 @@ export const CATS = [
   { id: "teaching", label: "Tutoring", Icon: FiBook, group: "Professional" },
   { id: "health", label: "Healthcare", Icon: FiHeart, group: "Professional" },
   { id: "realestate", label: "Real Estate", Icon: FiHome, group: "Professional" },
+  
   { id: "security", label: "Security", Icon: FiShield, group: "Professional" },
   { id: "logistics", label: "Logistics/Delivery", Icon: FiTruck, group: "Professional" },
   { id: "cleaning", label: "Cleaning", Icon: FiSun, group: "Professional" },

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Input = ({ value, onChange, placeholder }) => {
+const Input = ({ value, onChange, placeholder, type }) => {
   const [focus, setFocus] = useState(false);
 
   return (
@@ -10,6 +10,7 @@ const Input = ({ value, onChange, placeholder }) => {
       placeholder={placeholder}
       onFocus={() => setFocus(true)}
       onBlur={() => setFocus(false)}
+      type={type}
       className={`p-2 rounded border ${
         focus ? "border-green-500" : "border-gray-700"
       } bg-black text-white`}

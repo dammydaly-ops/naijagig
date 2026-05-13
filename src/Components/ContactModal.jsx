@@ -26,7 +26,7 @@ const ContactModal = ({ artisan, onClose }) => {
               </div>
             </div>
             <div className="flex flex-col gap-3 mb-5">
-              <Input label="Your Name" placeholder="e.g. Emeka Johnson" value={name} onChange={e => setName(e.target.value)} />
+              <Input type={"text"} label="Your Name" placeholder="e.g. Emeka Johnson" value={name} onChange={e => setName(e.target.value)} />
               <div>
                 <p className="text-[10px] text-gray-600 uppercase tracking-widest font-semibold mb-1.5">Message</p>
                 <textarea value={msg} onChange={e => setMsg(e.target.value)} placeholder={`Hi, I'd like to hire you for...`} rows={4}
